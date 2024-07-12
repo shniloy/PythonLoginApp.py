@@ -2,11 +2,15 @@ gmail = "niloybd@gmail.com"
 username = "111"
 password = "111"
 
-EnterGmail = input("Enter Gmail:")
-EnterUserName = input("Enter Username:")
-EnterPass = input("Enter Password:")
+print("Login App - Niloy")
 
-if EnterGmail == EnterUserName == EnterPass or EnterGmail == EnterPass or EnterUserName == EnterPass: 
-    print("Login Success")
+EnterGmail = input("Enter Gmail: ")
+EnterUsername = input("Enter Username: ")
+EnterPassword = input("Enter Password: ")
+
+if (EnterGmail == gmail and EnterUsername == username and EnterPassword == password) or \
+   (EnterUsername == username and EnterPassword == password) or \
+   (EnterGmail == gmail and EnterPassword == password):
+    print("Login Successful")
 else:
-    print("Login Failed, Please enter a valid Detail")
+    print("Login Failed")
